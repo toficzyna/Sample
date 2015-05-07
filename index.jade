@@ -1,23 +1,19 @@
+- var menuNames = ['Cat1','Cat2','cat3'];
 
 -header ={title: "Title", subtitle: "subtitle"};
 
-//training scenarions:
-- sampleTrainingsScenarios = {};
-- sampleTrainingsScenarios['scenarioOne'] = {title: 'title of scenario one', subtitle: 'subtitle of scenario one',content:"text of scenario one"}
-- sampleTrainingsScenarios['scenarioTwo'] = {title: 'title of scenario Two', subtitle: 'subtitle of scenario Two', content:"text of scenario two"}
-- sampleTrainingsScenarios['scenarioThree'] = {title: 'title of scenario Three', subtitle: 'subtitle of scenario Three', content:"text of scenario three"}
+- sampleScenarios = {};
+- sampleScenarios['scenarioOne'] = {title: 'title of scenario one', subtitle: 'subtitle of scenario one',content:"text of scenario one"}
+- sampleScenarios['scenarioTwo'] = {title: 'title of scenario Two', subtitle: 'subtitle of scenario Two', content:"text of scenario two"}
+- sampleScenarios['scenarioThree'] = {title: 'title of scenario Three', subtitle: 'subtitle of scenario Three', content:"text of scenario three"}
 
-//general content
 - var categories = {};
-- var sections = {};
-
-- var menuNames = ['Cat1','Cat2','Contact']
-
 - categories['categoryOne'] = ['html5','css','JavaScript'];
 - categories['categoryTwo'] = ['angular','less','bootstrap','bower'];
 - categories['categoryThree'] = ['yeoman','grunt'];
 - categories['categoryFour'] = ['npm','polimer','web-components'];
 
+- var sections = {};
 - sections[0] = {title: 'first title', subtitle:'first subtitle', text:'subsections text'};
 - sections[1] = {title: 'second title', subtitle:'second subtitle', text:'subsections text'};
 - sections[2] = {title: 'third title', subtitle:'third subtitle', text:'subsections text'};
@@ -98,18 +94,18 @@ html( lang= "en")
                     li
                         img(src="images/normal/html5.svg" alt="..." class="img-circle")
                         div.trainings-titles
-                            h3 #{sampleTrainingsScenarios['scenarioOne'].title}
-                            h4 #{sampleTrainingsScenarios['scenarioOne'].subtitle}
+                            h3 #{sampleScenarios['scenarioOne'].title}
+                            h4 #{sampleScenarios['scenarioOne'].subtitle}
                     li
                          img(src="images/normal/html5.svg" alt="..." class="img-circle")
                          div.trainings-titles
-                            h3 #{sampleTrainingsScenarios['scenarioTwo'].title}
-                            h4 #{sampleTrainingsScenarios['scenarioTwo'].subtitle}
+                            h3 #{sampleScenarios['scenarioTwo'].title}
+                            h4 #{sampleScenarios['scenarioTwo'].subtitle}
                     li
                         img(src="images/normal/html5.svg" alt="..." class="img-circle")
                         div.trainings-titles
-                            h3 #{sampleTrainingsScenarios['scenarioThree'].title}
-                            h4 #{sampleTrainingsScenarios['scenarioThree'].subtitle}
+                            h3 #{sampleScenarios['scenarioThree'].title}
+                            h4 #{sampleScenarios['scenarioThree'].subtitle}
 
      section(id = menuNames[2])
         .title.col-lg-12.col-md-12.col-sm-12.col-xs-12
@@ -125,5 +121,5 @@ html( lang= "en")
 
  script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
  script(src="js/bootstrap.js")
- script(src="skript.js")
+ script(src="script.js")
  link(href="css/bootstrap.min.css" rel="stylesheet")
